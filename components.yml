@@ -130,6 +130,7 @@ spec:
       labels:
         k8s-app: metrics-server
     spec:
+      hostNetwork: true # Add this line to enable hostNetwork
       containers:
       - args:
         - --cert-dir=/tmp
